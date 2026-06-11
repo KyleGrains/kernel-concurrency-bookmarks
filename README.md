@@ -169,3 +169,22 @@ For driver work, learn these in this order:
 
 Do not reach for seqlock or RCU first. They are tools for specific read-heavy patterns.
 
+## SPI, I2C, UART
+
+`The Art of Electronics` is useful for the electrical side of these interfaces, but it is not the best first source for protocol-level SPI/I2C/UART learning.
+
+Use this order instead:
+
+1. learn the protocol behavior from a short tutorial
+2. learn the electrical side from a hardware book
+3. read a real schematic or datasheet
+4. map signals to drivers or firmware
+
+Good starting references:
+
+- SPI / I2C / UART overview: https://learn.sparkfun.com/tutorials
+- Schematic reading basics: https://learn.sparkfun.com/tutorials/how-to-read-a-schematic/all
+- More schematic practice: https://www.digikey.com/en/blog/how-to-read-a-schematic
+- Electronics fundamentals: https://www.allaboutcircuits.com/textbook/direct-current/
+
+Use `The Art of Electronics` later as a reference when you want to understand pull-ups, timing, signal levels, and real-world circuit behavior.
